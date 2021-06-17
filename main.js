@@ -318,14 +318,14 @@ client.on("message", (msg)=>{
 		}
 
 		if(command == "presets"){
-			msg.reply("The candidate presets are:\nEstablishment Democrat\nEstablishment Republican\nDemocratic Socialist\nCommunist\nPopulist.\nType e?presets *name of preset* to use the preset. (WIP)")
+			msg.reply("The candidate presets are:\nEstablishment Democrat\nEstablishment Republican\nDemocratic Socialist\nCommunist\nPopulist.\nType e?preset *name of preset* to use the preset. (WIP)")
 		}
 	
 		if(command == "server"){
 			msg.reply("__Join the server to report bugs, suggest features, and play the game with others!__\n https://discord.gg/mvR2fEwntu")
 		}
 
-		if(command == "presets establishment democrat"){
+		if(command == "preset establishment democrat"){
 			if(msg.guild == null){
 				if(this.players[playerid].prompt == 0){
 					msg.channel.reply("You have chosen the Establishment Democrat preset");
