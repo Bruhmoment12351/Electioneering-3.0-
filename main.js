@@ -324,6 +324,17 @@ client.on("message", (msg)=>{
 		if(command == "server"){
 			msg.reply("__Join the server to report bugs, suggest features, and play the game with others!__\n https://discord.gg/mvR2fEwntu")
 		}
+
+		if(command == "presets establishment democrat"){
+			if(msg.guild == null){
+				if(this.players[playerid].prompt == 0){
+					msg.channel.reply("You have chosen the Establishment Democrat preset");
+					done = true;
+					this.Player.stats = [43, 59, 53, 41, "NORTHEAST", "WEALTHY"];
+					this.Player.rawstats = [43, 59, 53, 41, "NORTHEAST", "WEALTHY"];
+				}
+			}
+		}
 	
 		if(command == "help"){
 			msg.reply("coming soon...");
