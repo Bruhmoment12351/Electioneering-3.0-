@@ -959,7 +959,7 @@ class Game{
 
 	Respond(playerid, value){
 		if(this.players[playerid].prompt == 0){
-				if(value.toLowerCase == "ed" || value.toLowerCase == "establishment democrat" || value.toLowerCase == "democrat"){
+				if(value.toLowerCase == "ed"){
 							client.users.cache.get("" + playerid).send("You have chosen the preset Establishment Democrat.");
 							done = true;
 							this.Player.stats = [43, 59, 53, 41, "NORTHEAST", "WEALTHY"];
