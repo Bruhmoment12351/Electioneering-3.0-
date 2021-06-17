@@ -339,7 +339,7 @@ client.on("message", (msg)=>{
 			msg.channel.send("__Income Map__", {files: ["./IncomeMap.png"]})
 		}
 		if (command == "colors"){
-			msg.channel.send("__Colors__\n**Red**\n**Blue**\n**Green**\n**Yellow**\n**Gray**\n**Pink**\n**Purple**\n**Brown**");
+			msg.channel.send("__Colors__\n**Red**\n**Blue**\n**Green**\n**Yellow**\n**Gray**\n**Pink**\n**Purple**\n**Brown**\n**Cyan**\n**Black**\n**Lime**");
 		}
 		if(command == "state"){
 			if(args.length != 0 && Validstate(args[0].toUpperCase()) && activegames.hasOwnProperty(msg.channel.id) && activegames[msg.channel.id].finished){
