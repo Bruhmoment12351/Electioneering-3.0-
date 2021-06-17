@@ -226,10 +226,10 @@ client.on("message", (msg)=>{
 	
 		if(command == "create"){
 			if(msg.guild == null){
-				msg.reply("You cannot create a game in DM!");
+				msg.reply("You cannot create a game in DMs!");
 			}
 			else if(activegames.hasOwnProperty(msg.channel.id)){
-				msg.reply("you cannot create another game. Please wait for this current one to end.");
+				msg.reply("you cannot create another game. Please wait for the current one to end.");
 			}
 			else{
 				if(args.length == 0){
@@ -256,7 +256,7 @@ client.on("message", (msg)=>{
 					msg.reply("you have already joined this game!")
 				}
 				else if(activegames[msg.channel.id].started){
-					msg.reply("this game has already started. Please wait for this game to end.")
+					msg.reply("this game has already started. Please wait for the game to end.")
 				}
 				else if(args.length == 0){
 					msg.reply("please enter a color!")
@@ -314,7 +314,11 @@ client.on("message", (msg)=>{
 		}
 	
 		if(command == "version"){
-			msg.reply("Electioneering is on version **0.2.2**.")
+			msg.reply("Electioneering 2 is on version **0.0.2**.")
+		}
+
+		if(command == "presets"){
+			msg.reply("The candidate presets are:\nEstablishment Democrat\nEstablishment Republican\nDemocratic Socialist\nCommunist\nPopulist.\nType e?presets *name of preset* to use the preset. (WIP)")
 		}
 	
 		if(command == "server"){
@@ -510,7 +514,7 @@ class Game{
 		}
 		this.started = true;
 		Object.keys(this.players).forEach(player => {
-			client.users.cache.get("" + player).send("To play, your character must have **6** stats. \n**1**: How far __left__/__right__ you are.\n**2**: How much you appeal to __urban__ or __rural__ voters.\n**3**: How much you appeal to __college educated__ or __non college educated__ voters.\n**4**: How much you appeal to __religion__.\n**5**: What __income__ bracket you appeal to.\n**6**: What __region__ you appeal to.");
+			client.users.cache.get("" + player).send("To play, your character must have **6** stats. \n**1**: How far __left__/__right__ you are.\n**2**: How much you appeal to __urban__ or __rural__ voters.\n**3**: How much you appeal to __college educated__ or __non college educated__ voters.\n**4**: How much you appeal to __religion__.\n**5**: What __income__ bracket you appeal to.\n**6**: What __region__ you appeal to.\nOr alternatively you can choose a preset candidate, type e?presets for more info (WIP)");
 			client.users.cache.get("" + player).send("With 100% being far right and 0% being far left, what is your general ideology?\n*Please respond in the format: xx%*");
 			if(activegames.hasOwnProperty(activeplayers[player])){
 				activegames[activeplayers[player]].players[player].prompt = 0;
