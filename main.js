@@ -958,16 +958,6 @@ class Game{
 	}
 
 	Respond(playerid, value){
-		if(command == "preset.ed"){
-			if(msg.guild == null){
-				if(this.players[playerid].prompt == 0){
-					msg.channel.reply("You have chosen the Establishment Democrat preset");
-					done = true;
-					this.Player.stats = [43, 59, 53, 41, "NORTHEAST", "WEALTHY"];
-					this.Player.rawstats = [43, 59, 53, 41, "NORTHEAST", "WEALTHY"];
-				}
-			}
-		}
 		if(this.players[playerid].prompt == 0){
 			if(!isNaN(value)){
 				if(value >= 0 && value <= 100){
@@ -1078,6 +1068,16 @@ class Game{
 					this.startedreal = true;
 					this.PrintStats();
 					this.Turn();
+				}
+			}
+		}
+		if(value.toLowerCase == "ed" || value.toLowerCase == "establishment democrat" || value.toLowerCase == "democrat"){
+			if(msg.guild == null){
+				if(this.players[playerid].prompt == 0){
+					msg.channel.reply("You have chosen the Establishment Democrat preset");
+					done = true;
+					this.Player.stats = [43, 59, 53, 41, "NORTHEAST", "WEALTHY"];
+					this.Player.rawstats = [43, 59, 53, 41, "NORTHEAST", "WEALTHY"];
 				}
 			}
 		}
