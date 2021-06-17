@@ -68,7 +68,7 @@ const states = [
 	"WYOMING"
 ]
 
-client.login('ODU0ODkyNjU3OTIxODg0MTcw.YMqi1A.DfeoK0No8JtyhkWqVik4kiDaFc4');
+client.login('ODU0ODkyNjU3OTIxODg0MTcw.YMqi1A.3udcius0tTH0Hvkun5NOupdFfWo');
 
 client.on("message", (msg)=>{
 	if(msg.guild == null){
