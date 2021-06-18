@@ -571,7 +571,7 @@ class Game{
 				}
 			}
 
-			client.channels.cache.get(this.channel).send("Turn 8 Polls\n*MoE +/- 10%*", new Discord.MessageAttachment(this.canvas.toBuffer(), 'turn8polls.png'));
+			//client.channels.cache.get(this.channel).send("Turn 8 Polls\n*MoE +/- 10%*", new Discord.MessageAttachment(this.canvas.toBuffer(), 'turn8polls.png'));
 
 			let evs = [];
 			let popularvotes = [];
@@ -961,9 +961,9 @@ class Game{
 		if(this.players[playerid].prompt == 0){
 				if(value.toLowerCase == "ed"){
 							client.users.cache.get("" + playerid).send("You have chosen the preset Establishment Democrat.");
-							done = true;
 							this.Player.stats = [43, 59, 53, 41, "NORTHEAST", "WEALTHY"];
 							this.Player.rawstats = [43, 59, 53, 41, "NORTHEAST", "WEALTHY"];
+							done = true;
 				}
 			if(!isNaN(value)){
 				if(value >= 0 && value <= 100){
