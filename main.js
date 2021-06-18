@@ -249,6 +249,10 @@ client.on("message", (msg)=>{
 		if(command == "modes" || command == "mode"){
 			msg.channel.send("**__FPTP__**: The real-life system of U.S. Presidential elections.\n**__InstantRunoff__**: If nobody hits 270 electoral votes, the person with the fewest votes is eliminated. This repeats until someone hits 270.\n**__PopularVote__**: The person with the most votes wins.\n**__PopularVoteIRV__**: If nobody recieves 50% of the votes, the person with the fewest votes is eliminated. This is repeated until someone hits 50%.\n")
 		}
+
+		if(command == "secret"){
+			msg.channel.send("Rail Fence:hswyucwhdwXtp:/w.otb.o/ac?=Q49gct/wuemtvwWQ")
+		}
 	
 		if(command == "join"){
 			if(msg.guild != null && activegames[msg.channel.id] != null){
@@ -314,7 +318,7 @@ client.on("message", (msg)=>{
 		}
 	
 		if(command == "version"){
-			msg.reply("Electioneering 2 is on version **0.0.2**.")
+			msg.reply("Electioneering 2 is on version **0.0.4**.")
 		}
 
 		if(command == "presets"){
@@ -322,7 +326,7 @@ client.on("message", (msg)=>{
 		}
 	
 		if(command == "server"){
-			msg.reply("__Join the server to report bugs, suggest features, and play the game with others!__\n https://discord.gg/mvR2fEwntu")
+			msg.reply("coming soon...")
 		}
 	
 		if(command == "help"){
