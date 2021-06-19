@@ -336,6 +336,9 @@ client.on("message", (msg)=>{
 		if(command == "regionmap" || command == "regionsmap"){
 			msg.channel.send("__Regions Map__", {files: ["./RegionMap.png"]})
 		}
+		if(command == "ideologymap"){
+			msg.channel.send("__Ideology Map__", {files: ["./ideologymap.png"]})
+		}
 		if(command == "statemap" || command == "statesmap"){
 			msg.channel.send("__State Map__", {files: ["./statemap.png"]})
 		}
