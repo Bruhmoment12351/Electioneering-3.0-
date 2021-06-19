@@ -522,7 +522,7 @@ class Game{
 		this.started = true;
 		Object.keys(this.players).forEach(player => {
 			client.users.cache.get("" + player).send("To play, your character must have **6** stats. \n**1**: How far __left__/__right__ you are.\n**2**: How much you appeal to __urban__ or __rural__ voters.\n**3**: How much you appeal to __college educated__ or __non college educated__ voters.\n**4**: How much you appeal to __religion__.\n**5**: What __income__ bracket you appeal to.\n**6**: What __region__ you appeal to.\nOr alternatively you can choose a preset candidate, type e?presets for more info (WIP)");
-			client.users.cache.get("" + player).send("With 100% being far right and 0% being far left, what is your general ideology?\n*Please respond in the format: xx%*");
+			client.users.cache.get("" + player).send("With 100% being far right and 0% being far left, what is your general ideology?\n*Please respond in the format: xx%*\nAlso, use the command ideologymap to see the ideology of each states.");
 			if(activegames.hasOwnProperty(activeplayers[player])){
 				activegames[activeplayers[player]].players[player].prompt = 0;
 			}
@@ -578,7 +578,7 @@ class Game{
 				}
 			}
 
-			//client.channels.cache.get(this.channel).send("Turn 8 Polls\n*MoE +/- 10%*", new Discord.MessageAttachment(this.canvas.toBuffer(), 'turn8polls.png'));
+			client.channels.cache.get(this.channel).send("Turn 8 Polls\n*MoE +/- 10%*", new Discord.MessageAttachment(this.canvas.toBuffer(), 'turn8polls.png'));
 
 			let evs = [];
 			let popularvotes = [];
