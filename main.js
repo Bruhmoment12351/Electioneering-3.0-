@@ -326,7 +326,7 @@ client.on("message", (msg)=>{
 		}
 	
 		if(command == "server"){
-			msg.reply("coming soon...")
+			msg.reply("the server invite link is https://discord.gg/DssAbhmfME")
 		}
 	
 		if(command == "help"){
