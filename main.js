@@ -236,8 +236,12 @@ client.on("message", (msg)=>{
 					activegames[msg.channel.id] = new Game(msg.author.id, msg.channel.id, "fptp");
 					msg.channel.send(`Successfully created a game. If you would like to join, type \`${config.prefix}join\` followed by a color. For information about the colors, type \`${config.prefix}colors\``)
 				}
-				else if(args[0] != "fptp" && args[0] != "instantrunoff" && args[0] != "popularvote" && args[0] != "popularvoteirv"){
+				else if(args[0] != "fptp" && args[0] != "instantrunoff" && args[0] != "popularvote" && args[0] != "popularvoteirv " && args[0] != "debate" && args[0] != "debates"){
 					msg.reply("That is an invalid mode. For more information, do `e?modes`.");
+				}
+				else if(args[0] == debates || args[0] == debate){
+					activegames[msg.channel.id] = new Game(msg.author.id, msg.channel.id, "debates");
+					msg.channel.send(`Successfully created a game. If you would like to join, type \`${config.prefix}join\` followed by a color. For information about the colors, type \`${config.prefix}colors\``)
 				}
 				else{
 					activegames[msg.channel.id] = new Game(msg.author.id, msg.channel.id, args[0]);
@@ -247,7 +251,7 @@ client.on("message", (msg)=>{
 		}
 	
 		if(command == "modes" || command == "mode"){
-			msg.channel.send("**__FPTP__**: The real-life system of U.S. Presidential elections.\n**__InstantRunoff__**: If nobody hits 270 electoral votes, the person with the fewest votes is eliminated. This repeats until someone hits 270.\n**__PopularVote__**: The person with the most votes wins.\n**__PopularVoteIRV__**: If nobody recieves 50% of the votes, the person with the fewest votes is eliminated. This is repeated until someone hits 50%.\n")
+			msg.channel.send("**__FPTP__**: The real-life system of U.S. Presidential elections.\n**__InstantRunoff__**: If nobody hits 270 electoral votes, the person with the fewest votes is eliminated. This repeats until someone hits 270.\n**__Debates**__: Like FPTP, but debates are held after turn 6.\n**__PopularVote__**: The person with the most votes wins.\n**__PopularVoteIRV__**: If nobody recieves 50% of the votes, the person with the fewest votes is eliminated. This is repeated until someone hits 50%.\n")
 		}
 
 		if(command == "secret"){
@@ -1083,6 +1087,9 @@ class Game{
 					this.Turn();
 				}
 			}
+		}
+		if(this.players[playerid].rawstats[1] == 69 && this.players[playerid].rawstats[2] == 69 && this.players[playerid].rawstats[3] == 69 && this.players[playerid].rawstats[4] == 69 ){
+			client.users.cache.get("" + playerid).send("wow you're a loser you really made every number stat 69 like bruh go outside");
 		}
 	}
 }
