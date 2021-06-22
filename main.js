@@ -1089,7 +1089,7 @@ class Game{
 			}
 		}
 		if(this.players[playerid].rawstats[1] == 69 && this.players[playerid].rawstats[2] == 69 && this.players[playerid].rawstats[3] == 69 && this.players[playerid].rawstats[4] == 69 ){
-			client.users.cache.get("" + playerid).send("wow you're a loser you really made every number stat 69 like bruh go outside");
+			client.users.cache.get("" + playerid).send("wow you're such a loser you really made every number stat 69 like bruh go outside");
 		}
 	}
 }
