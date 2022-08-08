@@ -341,7 +341,7 @@ client.on("message", (msg)=>{
 			msg.channel.send("__Regions Map__", {files: ["./RegionMap.png"]})
 		}
 		if(command == "ideologymap"){
-			msg.channel.send("__Ideology Map__", {files: ["./ideologymap.png"]})
+			msg.channel.send("__Ideology Map__", {files: ["./https://cdn.discordapp.com/attachments/855889320836464660/1006304720706617404/Untitled550_20220808155139.png"]})
 		}
 		if(command == "statemap" || command == "statesmap"){
 			msg.channel.send("__State Map__", {files: ["./statemap.png"]})
