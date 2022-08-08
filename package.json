@@ -1,12 +1,13 @@
 {
+
   "name": "electioneering",
-  "description": "a really cool app",
   "version": "1.0.0",
-  "engines": {
+  "description": "",
+  "main": "main.js",
+  "scripts": {
     "node": "16.x"
-  }
-}
-  },
+ 
+ },
   "author": "",
   "license": "ISC",
   "dependencies": {
