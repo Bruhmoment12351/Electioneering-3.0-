@@ -4,9 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    "npm" : "7.0.0",
-    "node" : "16.0.0"
+     "npm" : "7.0.0",
+      "node" : "16.0.0"
 
   },
   "author": "",
