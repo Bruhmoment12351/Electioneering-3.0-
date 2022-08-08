@@ -1,10 +1,16 @@
 {
   "name": "electioneering",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "lockfileVersion": 1,
+  "requires": true,
+  "dependencies": {
+    "@babel/runtime": {
+      "version": "7.12.5",
+      "resolved": "https://registry.npmjs.org/@babel/runtime/-/runtime-7.12.5.tgz",
+      "integrity": "sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==",
+      "requires": {
+        "regenerator-runtime": "^0.13.4"
+
   },
   "author": "",
   "license": "ISC",
