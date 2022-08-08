@@ -6,7 +6,6 @@
     "node": "16.x"
   }
 }
-
   },
   "author": "",
   "license": "ISC",
@@ -16,4 +15,4 @@
     "jimp": "^0.16.1",
     "replace-color": "^2.3.0"
   }
-},
+}
