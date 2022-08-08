@@ -3,7 +3,7 @@
   "version": "v0.3.0",
   "description": "",
   "main": "main.js",
-  "scripts": {
+  "engines": {
     "node": "16.x"
   },
   "author": "",
