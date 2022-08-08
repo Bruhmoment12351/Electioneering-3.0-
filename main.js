@@ -982,7 +982,7 @@ class Game{
 						this.players[playerid].rawstats[1] = value;
 						this.players[playerid].stats[1] = (value * 0.3) - 15;
 						this.players[playerid].prompt = 1;
-						client.users.cache.get("" + playerid).send("With 100% being totally urban and 0% being totally rural, which do you appeal to more?\n*Please respond in the format: xx%*");
+						client.users.cache.get("" + playerid).send("With 100% being totally urban and 0% being totally rural, which do you appeal to more?\n*Please respond in the format: xx%* Also");
 					}
 					else{
 						client.users.cache.get("" + playerid).send("Please enter a whole number.");
@@ -1089,7 +1089,7 @@ class Game{
 			}
 		}
 		if(this.players[playerid].rawstats[1] == 69 && this.players[playerid].rawstats[2] == 69 && this.players[playerid].rawstats[3] == 69 && this.players[playerid].rawstats[4] == 69 ){
-			client.users.cache.get("" + playerid).send("wow you're such a loser you really made every number stat 69 like bruh go outside");
+			client.users.cache.get("" + playerid).send("oh my goodness gracious, you used the funny number!!! you're so funny!!! just kidding loser, go outside and touch grass. i fucking develop a discord bot, and i probably still get more pussy than you.");
 		}
 	}
 }
