@@ -1,10 +1,13 @@
 {
-  "name": "electioneering",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "engines": {
-    "node": "6.11.1"
+    "name": "Electioneering 3.0",
+    "version": "1.0.0",
+    "description": "Campaigning may be easy, but electioneering is harder.",
+    "main": "index.js",
+    "dependencies": {
+        "discord.js": "^11.3.0"
+    },
+    "author": "Senator Cringe"
+}
 
   },
   "author": "",
