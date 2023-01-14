@@ -8,14 +8,3 @@
     },
     "author": "Senator Cringe"
 }
-
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "canvas": "^2.6.1",
-    "discord.js": "^12.5.3",
-    "jimp": "^0.16.1",
-    "replace-color": "^2.3.0"
-  }
-}
