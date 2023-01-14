@@ -1,4 +1,5 @@
 {
-	"botkey": "",
-	"prefix": "e?"
+  "token": "",
+  "prefix": "e?",
+  "ownerid": ""
 }
